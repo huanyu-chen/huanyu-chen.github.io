@@ -35,7 +35,7 @@ h1 span { display: block; margin-top: .6rem; font-family: "Segoe UI", sans-serif
 .button:hover, .button:focus { transform: translateY(-2px); background: white; }
 .button.primary { border-color: var(--accent); background: var(--accent); color: white; }
 .hero-visual { position: relative; aspect-ratio: 1; display: grid; place-items: center; }
-.portrait { position: relative; z-index: 2; width: min(68%, 285px); height: auto; aspect-ratio: 360 / 500; object-fit: cover; object-position: center top; border-radius: 48% 48% 8px 8px; border: 8px solid var(--surface); box-shadow: 0 30px 80px #164d6840; }
+.portrait { position: relative; z-index: 2; width: min(55%, 230px); height: auto; aspect-ratio: 360 / 500; object-fit: cover; object-position: center top; border-radius: 48% 48% 8px 8px; border: 7px solid var(--surface); box-shadow: 0 26px 65px #164d6838; }
 .orbit { position: absolute; border: 1px solid #577069; border-radius: 50%; }
 .orbit-a { inset: 7%; animation: spin 22s linear infinite; }
 .orbit-b { inset: 22%; border-style: dashed; animation: spin 14s linear infinite reverse; }
@@ -100,7 +100,7 @@ footer { max-width: var(--max); margin: auto; padding: 2rem; display: flex; just
   .site-header { min-height: 64px; }
   h1 { font-size: 3.6rem; }
   .hero-visual { max-width: 260px; }
-  .portrait { width: min(68%, 220px); border-width: 6px; }
+  .portrait { width: min(58%, 185px); border-width: 5px; }
   .section-heading { grid-template-columns: 38px 1fr; }
   .term-grid { grid-template-columns: 1fr; }
   .publication { grid-template-columns: 1fr; gap: .4rem; }
