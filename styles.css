@@ -34,10 +34,10 @@ h1 span { display: block; margin-top: .6rem; font-family: "Segoe UI", sans-serif
 .button { padding: .7rem 1rem; border: 1px solid var(--ink); border-radius: 999px; text-decoration: none; font-size: .88rem; transition: .2s ease; }
 .button:hover, .button:focus { transform: translateY(-2px); background: white; }
 .button.primary { border-color: var(--accent); background: var(--accent); color: white; }
-.hero-visual { position: relative; aspect-ratio: 1; display: grid; place-items: center; }
-.portrait { position: relative; z-index: 2; width: min(55%, 230px); height: auto; aspect-ratio: 360 / 500; object-fit: cover; object-position: center top; border-radius: 48% 48% 8px 8px; border: 7px solid var(--surface); box-shadow: 0 26px 65px #164d6838; }
+.hero-visual { position: relative; width: 100%; max-width: 500px; aspect-ratio: 1; display: grid; place-items: center; justify-self: center; align-self: center; }
+.portrait { position: relative; z-index: 2; width: 55%; height: 55%; max-width: 230px; max-height: 230px; object-fit: cover; object-position: center 18%; border: 7px solid var(--surface); border-radius: 50%; box-shadow: 0 26px 65px #164d6838; }
 .orbit { position: absolute; border: 1px solid #577069; border-radius: 50%; }
-.orbit-a { inset: 7%; animation: spin 22s linear infinite; }
+.orbit-a { inset: 7%; border: 2px solid var(--ink); animation: spin 22s linear infinite; }
 .orbit-b { inset: 22%; border-style: dashed; animation: spin 14s linear infinite reverse; }
 .node { position: absolute; width: 18px; height: 18px; border-radius: 50%; background: var(--accent-bright); box-shadow: 0 0 0 8px #b8df4a26; }
 .n1 { top: 7%; left: 48%; } .n2 { bottom: 18%; left: 12%; background: var(--accent); } .n3 { right: 10%; bottom: 30%; background: #e39956; }
@@ -100,7 +100,7 @@ footer { max-width: var(--max); margin: auto; padding: 2rem; display: flex; just
   .site-header { min-height: 64px; }
   h1 { font-size: 3.6rem; }
   .hero-visual { max-width: 260px; }
-  .portrait { width: min(58%, 185px); border-width: 5px; }
+  .portrait { width: 58%; height: 58%; max-width: 185px; max-height: 185px; border-width: 5px; }
   .section-heading { grid-template-columns: 38px 1fr; }
   .term-grid { grid-template-columns: 1fr; }
   .publication { grid-template-columns: 1fr; gap: .4rem; }
