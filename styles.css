@@ -55,8 +55,6 @@ h1 span { display: block; margin-top: .6rem; font-family: "Segoe UI", sans-serif
 .research-grid article > span { color: var(--accent); font-size: .72rem; }
 .research-grid h3 { margin: auto 0 .4rem; font-size: 1.25rem; line-height: 1.35; }
 .research-grid p { margin: 0; color: var(--muted); font-size: .82rem; line-height: 1.45; }
-.focus-line { margin-top: 1rem; padding: 1.1rem 1.3rem; display: flex; flex-wrap: wrap; gap: 1rem 2rem; border: 1px solid var(--line); font-size: .9rem; }
-.focus-line span { color: var(--muted); }
 .publications { background: var(--ink); color: #f8f4e9; max-width: none; padding-left: max(2rem, calc((100vw - var(--max)) / 2 + 2rem)); padding-right: max(2rem, calc((100vw - var(--max)) / 2 + 2rem)); }
 .publications .section-heading p:last-child, .publication p { color: #abb5b1; }
 .publication-list { border-top: 1px solid #40504c; }
