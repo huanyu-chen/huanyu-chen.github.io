@@ -68,16 +68,14 @@ h1 span { display: block; margin-top: .6rem; font-family: "Segoe UI", sans-serif
 .publication p:not(.pub-type) { margin: 0 0 .5rem; font-size: .9rem; }
 .publication a, .text-link { color: var(--accent-bright); font-weight: 700; text-decoration: none; }
 .text-link { display: inline-block; margin-top: 2rem; }
-.project-card { padding: 2.2rem; display: grid; grid-template-columns: 1.2fr .8fr; gap: 3rem; background: var(--blue); color: white; border-radius: 2px; }
-.project-card h3 { margin: 0; font-family: Georgia, "Noto Serif TC", serif; font-size: clamp(1.7rem, 3vw, 2.6rem); font-weight: 400; line-height: 1.35; }
-.project-card .label { color: var(--accent-bright); }
-.project-en { color: #c6d7df; font-size: .9rem; }
-.teaching-layout { display: grid; grid-template-columns: 1fr 320px; gap: 4rem; }
-.teaching-layout-single { grid-template-columns: 1fr; }
-.teaching-layout h3 { margin-top: 0; }
-.course-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
-.course-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
-.course-list span { display: block; color: var(--ink); font-size: 1.05rem; font-weight: 700; }
+.term-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.term-card { padding: 1.6rem; background: var(--surface); border-top: 3px solid var(--blue); }
+.term-card:nth-child(-n+2) { border-top-color: var(--accent); }
+.term-card p { margin: 0; color: var(--accent); font-size: .76rem; font-weight: 700; letter-spacing: .08em; }
+.term-card h3 { margin: .2rem 0 1.1rem; font-family: Georgia, "Noto Serif TC", serif; font-size: 1.55rem; font-weight: 400; }
+.term-card ul { list-style: none; padding: 0; margin: 0; }
+.term-card li { padding: .48rem 0; border-bottom: 1px solid var(--line); font-size: .9rem; }
+.term-card li:last-child { border-bottom: 0; }
 .service-block { display: grid; grid-template-columns: .8fr 1.2fr; gap: 4rem; }
 .service-block > p { margin: 0; font-family: Georgia, "Noto Serif TC", serif; font-size: 1.5rem; }
 .service-block ul { margin: 0; padding: 0; list-style: none; columns: 2; }
@@ -93,8 +91,8 @@ footer { max-width: var(--max); margin: auto; padding: 2rem; display: flex; just
   .hero-visual { max-width: 330px; width: 100%; margin: auto; order: -1; }
   .research-grid { grid-template-columns: 1fr; }
   .research-grid article:nth-child(n) { grid-column: auto; min-height: 190px; }
-  .project-card, .teaching-layout, .service-block { grid-template-columns: 1fr; gap: 2rem; }
-  .course-list { grid-template-columns: 1fr; }
+  .term-grid { grid-template-columns: 1fr 1fr; }
+  .service-block { grid-template-columns: 1fr; gap: 2rem; }
   .service-block ul { columns: 1; }
 }
 @media (max-width: 520px) {
@@ -104,6 +102,7 @@ footer { max-width: var(--max); margin: auto; padding: 2rem; display: flex; just
   .hero-visual { max-width: 260px; }
   .portrait { width: min(68%, 220px); border-width: 6px; }
   .section-heading { grid-template-columns: 38px 1fr; }
+  .term-grid { grid-template-columns: 1fr; }
   .publication { grid-template-columns: 1fr; gap: .4rem; }
   .publication.featured { padding-left: .8rem; }
   footer { flex-direction: column; }
